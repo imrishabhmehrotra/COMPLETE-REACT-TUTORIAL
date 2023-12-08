@@ -14,13 +14,13 @@ const morningText = "good morning user";
 const afternoonText = "Good afternoon user";
 
 function handleClick() {
-    console.log("i was clicked")
+  console.log("i was clicked");
 }
 
 //conditional rendering
 const morningElement = (
   <div>
-    {morningText} <span onClick = {handleClick}>it is 8am</span>
+    {morningText} <span onClick={handleClick}>it is 8am</span>
   </div>
 );
 const afternoonElement = <div>{afternoonText} it is 6pm</div>;
@@ -33,8 +33,7 @@ const greetingElement = isMorning ? morningElement : afternoonElement;
 //  {greetingElement}i am inside component</>
 
 const GreetingComponent = function () {
-  return <div>{greetingElement}i am inside component
-  </div>;
+  return <div>{greetingElement}i am inside component</div>;
 };
 console.log(GreetingComponent);
 const root = ReactDOM.createRoot(document.getElementById("root"));
